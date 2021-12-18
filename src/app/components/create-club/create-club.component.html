@@ -1,0 +1,39 @@
+<h2 [ngStyle]="{'text-align': 'center'}">
+    Finalisez l'inscription en entrant les coordonnées du club
+</h2>
+<div>
+    <form [formGroup]="formClub" (ngSubmit)="onSubmit()">
+       
+        <div *ngIf="president">
+            <label>Président</label>
+            <input type="text" disabled [value]="president.email">
+        </div>
+        <div>
+            <label>Matricule</label>
+            <input type="text" formControlName="matricule">
+        </div>
+        <div>
+            <label>Nom</label>
+            <input type="text" formControlName="nom">
+        </div>
+        <div>
+            <label>Ville</label>
+            <input type="text" formControlName="ville">
+        </div>
+        <div>
+            <label>Code postal</label>
+            <input type="text" formControlName="codepostal">
+        </div>
+        <div>
+            <label>Rue</label>
+            <input type="text" formControlName="rue">
+        </div>
+        <div>
+            <label>Numéro</label>
+            <input type="text" formControlName="numero">
+        </div>
+
+        <input type="submit" value="Enregistrer le club" [disabled]="formClub.invalid">
+        
+    </form>
+</div>

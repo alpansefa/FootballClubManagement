@@ -1,0 +1,49 @@
+<div [ngStyle]="{'text-align': 'center'}" class="container">
+
+    <h1>Football Club Management</h1>
+    <h2>Bienvenue {{currentuser.prenom}} {{currentuser.nom}} </h2>
+    <h3 *ngIf="currentuser.role==='coach' && club && equipe">
+         {{currentuser.role | titlecase}} de {{club.nom}} de l'équipe {{equipe.categorie}}
+    </h3>
+    <h3 *ngIf="currentuser.role==='president' && club">
+        {{currentuser.role | titlecase}} de {{club.nom}}
+    </h3>
+</div>
+
+<div class="cards" *ngIf="currentuser.role === 'president'">
+
+    <div routerLink="/compte">
+        Compte
+    </div>
+    <div routerLink="/president">
+        Président
+    </div>
+    <div routerLink="/president/gestioncoachs">
+        Gérer les coachs
+    </div>
+    <div routerLink="/president/gestionjoueurs">
+        Gérer les joueurs
+    </div>
+    <div routerLink="/president/gestionequipes">
+        Gérer les équipes
+    </div>
+    <div routerLink="/club">
+        Club
+    </div>
+
+
+</div>
+
+<div class="cards" *ngIf="currentuser.role !== 'president'">
+
+    <div routerLink="/compte">
+        Compte
+    </div>
+    <div routerLink="/manage-players">
+        Gérer ses joueurs
+    </div>
+    <div routerLink="/club">
+        Club
+    </div>
+
+</div>

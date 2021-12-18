@@ -1,0 +1,35 @@
+<div class="container" *ngIf="club">
+    <div>
+
+        <h2 [ngStyle]="{'text-align':'center'}">
+            Informations sur le club
+        </h2>
+    </div>
+    <div>
+        <label>Matricule :</label> {{club.matricule}}
+    </div>
+    <div>
+        <label>Nom : </label>  {{club.nom}}
+    </div>
+    <div>
+        <label>Adresse : </label>  {{club.rue}} {{club.numero}}, {{club.codepostal}} {{club.ville}}
+    </div>
+    <div *ngIf="equipes.length>1">
+        <label>Équipes : </label>  
+        <ul *ngFor="let equipe of equipes">
+            <li>
+                {{equipe.categorie}}
+            </li>
+        </ul>
+        
+    </div>
+    <div *ngIf="equipes.length==1">
+        <label>Équipe :</label>   {{equipes[0].categorie}}
+        <!-- <ul  *ngFor="let equipe of equipes">
+            <li>
+                {{equipe.categorie}}
+            </li>
+        </ul> -->
+    </div>
+
+</div>

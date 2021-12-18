@@ -1,0 +1,361 @@
+{
+  "presidents": [
+    {
+      "nom": "Yee",
+      "prenom": "Xiao",
+      "naissance": "1997-08-08",
+      "email": "yee@email",
+      "password": "9003d1df22eb4d3820015070385194c8",
+      "role": "president",
+      "id": 1,
+      "club_id": 1
+    },
+    {
+      "nom": "bartom",
+      "prenom": "meuuu",
+      "naissance": "1111-10-10",
+      "email": "bm@m",
+      "password": "6f8f57715090da2632453988d9a1501b",
+      "role": "president",
+      "club_id": 2,
+      "id": 2
+    },
+    {
+      "nom": "Perez",
+      "prenom": "Florentino",
+      "naissance": "1986-10-10",
+      "email": "flo@email",
+      "password": "9003d1df22eb4d3820015070385194c8",
+      "role": "president",
+      "id": 3,
+      "club_id": 3
+    },
+    {
+      "nom": "Tapie",
+      "prenom": "Bernard",
+      "naissance": "1000-10-10",
+      "email": "tp@email",
+      "password": "9003d1df22eb4d3820015070385194c8",
+      "role": "president",
+      "id": 4,
+      "club_id": 4
+    },
+    {
+      "nom": "Laporta",
+      "prenom": "Joan",
+      "naissance": "1962-06-29",
+      "email": "laporta@email",
+      "password": "9003d1df22eb4d3820015070385194c8",
+      "role": "president",
+      "id": 5,
+      "club_id": 5
+    }
+  ],
+  "coachs": [
+    {
+      "nom": "Zidane",
+      "prenom": "zz",
+      "naissance": "1980-12-10",
+      "email": "zz@email",
+      "password": "fbade9e36a3f36d3d676c1b808451dd7",
+      "role": "coach",
+      "club_id": 1,
+      "statut": "principal",
+      "id": 1,
+      "equipe_id": 1
+    },
+    {
+      "nom": "Ancelotti",
+      "prenom": "Carlo",
+      "naissance": "1999-12-19",
+      "email": "carlo@email",
+      "password": "0cc175b9c0f1b6a831c399e269772661",
+      "role": "coach",
+      "club_id": 1,
+      "statut": "principal",
+      "equipe_id": 2,
+      "id": 2
+    },
+    {
+      "nom": "Sampaoli",
+      "prenom": "Jorge",
+      "naissance": "1960-03-13",
+      "email": "sampa@email",
+      "password": "9003d1df22eb4d3820015070385194c8",
+      "role": "coach",
+      "club_id": 4,
+      "statut": "principal",
+      "equipe_id": "7",
+      "id": 3
+    },
+    {
+      "nom": "Bielsa",
+      "prenom": "Marcelo",
+      "date": "1955-07-21",
+      "email": "bielsa@email",
+      "statut": "principal",
+      "naissance": "1955-07-21",
+      "password": "9003d1df22eb4d3820015070385194c8",
+      "club_id": 4,
+      "role": "coach",
+      "equipe_id": "8",
+      "id": 4
+    }
+  ],
+  "joueurs": [
+    {
+      "nom": "Messi",
+      "prenom": "Lionel",
+      "naissance": "1987-06-24",
+      "email": "messi@email",
+      "password": "1463ccd2104eeb36769180b8a0c86bb6",
+      "discriminator": "joueur",
+      "club_id": 1,
+      "poste": "10 - Milieu offensif",
+      "isBlesse": false,
+      "id": 1,
+      "equipe_id": 1
+    },
+    {
+      "nom": "Neymar",
+      "prenom": "Junior",
+      "date": "1990-09-19",
+      "email": "jr@email",
+      "poste": "11 - Attaquant Droit",
+      "isBlesse": true,
+      "naissance": "1990-09-19",
+      "password": "d5de679d452cb429e6f55e64a9988cbf",
+      "club_id": 1,
+      "discriminator": "joueur",
+      "id": 2,
+      "equipe_id": 1
+    },
+    {
+      "nom": "Ronaldo",
+      "prenom": "Le vrai",
+      "date": "1996-10-04",
+      "poste": "9 - Attaquant en pointe",
+      "isBlesse": true,
+      "naissance": "1996-10-04",
+      "club_id": 1,
+      "discriminator": "joueur",
+      "id": 3,
+      "equipe_id": 1
+    },
+    {
+      "nom": "Van Persie",
+      "prenom": "Robin",
+      "naissance": "1976-09-19",
+      "equipe_id": 1,
+      "role": "joueur",
+      "club_id": 1,
+      "poste": "9 - Attaquant en pointe",
+      "isBlesse": false,
+      "id": 4
+    },
+    {
+      "nom": "Benzema",
+      "prenom": "Karim",
+      "naissance": "1987-12-19",
+      "equipe_id": 2,
+      "role": "joueur",
+      "club_id": 1,
+      "poste": "9 - Attaquant en pointe",
+      "isBlesse": false,
+      "id": 7
+    },
+    {
+      "nom": "Alaba",
+      "prenom": "David",
+      "naissance": "1992-06-24",
+      "equipe_id": 2,
+      "role": "joueur",
+      "club_id": 1,
+      "poste": "5 - Défenseur central gauche",
+      "isBlesse": false,
+      "id": 8
+    },
+    {
+      "nom": "Payet",
+      "prenom": "Dimitri",
+      "naissance": "1990-01-11",
+      "equipe_id": 7,
+      "role": "joueur",
+      "club_id": 4,
+      "poste": "10 - Milieu offensif",
+      "isBlesse": false,
+      "id": 10
+    },
+    {
+      "nom": "Under",
+      "prenom": "Cengiz",
+      "naissance": "1997-07-14",
+      "equipe_id": "8",
+      "role": "joueur",
+      "club_id": 4,
+      "poste": "11 - Attaquant Droit",
+      "isBlesse": false,
+      "id": 11
+    },
+    {
+      "nom": "De La Fuente",
+      "prenom": "Konrad",
+      "naissance": "2001-07-16",
+      "equipe_id": "8",
+      "role": "joueur",
+      "club_id": 4,
+      "poste": "10 - Milieu offensif",
+      "isBlesse": false,
+      "id": 12
+    },
+    {
+      "nom": "Mandanda",
+      "prenom": "Steve",
+      "naissance": "1972-09-19",
+      "equipe_id": "8",
+      "role": "joueur",
+      "club_id": 4,
+      "poste": "1 - Gardien de but",
+      "isBlesse": true,
+      "id": 13
+    },
+    {
+      "nom": "Testinho",
+      "prenom": "Testo",
+      "naissance": "2021-12-31",
+      "equipe_id": 1,
+      "role": "joueur",
+      "club_id": 1,
+      "poste": "1 - Gardien de but",
+      "isBlesse": false,
+      "id": 14
+    },
+    {
+      "nom": "Testos",
+      "prenom": "jnjn",
+      "date": "2021-12-31",
+      "equipe": 1,
+      "poste": "1 - Gardien de but",
+      "isBlesse": false,
+      "naissance": "2021-12-31",
+      "club_id": 1,
+      "role": "joueur",
+      "equipe_id": 1,
+      "id": 15
+    }
+  ],
+  "clubs": [
+    {
+      "matricule": "mat01",
+      "nom": "Youngz ",
+      "rue": "Vanhulst",
+      "numero": "18",
+      "ville": "Manage",
+      "codepostal": "5780",
+      "id": 1
+    },
+    {
+      "matricule": "mat02",
+      "nom": "Charleroi",
+      "rue": "Grand rue",
+      "numero": "15",
+      "ville": "Charleroi",
+      "codepostal": "6000",
+      "id": 2
+    },
+    {
+      "matricule": "mat03",
+      "nom": "Real Madrid",
+      "rue": "Avenue de Concha Espina",
+      "numero": "1",
+      "ville": "Madrid",
+      "codepostal": "28036",
+      "id": 3
+    },
+    {
+      "matricule": "mat04",
+      "nom": "Olympique de Marseille",
+      "rue": "Boulevard Michelet",
+      "numero": "3",
+      "ville": "Marseille",
+      "codepostal": "13008",
+      "id": 4
+    },
+    {
+      "matricule": "mat05",
+      "nom": "FC Barcelone",
+      "rue": "Avinguda Aristides Maillol",
+      "numero": "1",
+      "ville": "Barcelone",
+      "codepostal": "08028",
+      "id": 5
+    }
+  ],
+  "equipes": [
+    {
+      "categorie": "Professionnel",
+      "club_id": 1,
+      "id": 1
+    },
+    {
+      "categorie": "Espoir",
+      "club_id": 1,
+      "id": 2
+    },
+    {
+      "categorie": "U21",
+      "club_id": 1,
+      "id": 3
+    },
+    {
+      "categorie": "U19",
+      "club_id": 1,
+      "id": 4
+    },
+    {
+      "categorie": "U17",
+      "club_id": 1,
+      "id": 5
+    },
+    {
+      "categorie": "U15",
+      "club_id": 1,
+      "id": 6
+    },
+    {
+      "categorie": "Professionnel",
+      "club_id": 4,
+      "id": 7
+    },
+    {
+      "categorie": "U15",
+      "club_id": 4,
+      "id": 8
+    },
+    {
+      "categorie": "Professionnel",
+      "club_id": 2,
+      "id": 9
+    },
+    {
+      "categorie": "Espoir",
+      "club_id": 2,
+      "id": 10
+    },
+    {
+      "categorie": "U15",
+      "club_id": 2,
+      "id": 11
+    },
+    {
+      "categorie": "u17",
+      "club_id": 2,
+      "id": 12
+    },
+    {
+      "categorie": "u19",
+      "club_id": 2,
+      "id": 13
+    }
+  ]
+}

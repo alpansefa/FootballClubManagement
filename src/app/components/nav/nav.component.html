@@ -1,0 +1,39 @@
+<nav>
+    <ul>
+        <li>
+            <a routerLinkActive="active" routerLink="home">
+                Home
+            </a>
+        </li>
+        <li *ngIf="!isConnected">
+            <a routerLinkActive="active" routerLink='login'>
+                S'identifier
+            </a>
+        </li>
+        <li>
+            <a routerLinkActive="active" routerLink="club">
+                Club
+            </a>
+        </li>
+        <li *ngIf="user && user.role==='president'">
+            <a routerLinkActive="active" routerLink="president">
+                Président
+            </a>
+        </li>
+        <li *ngIf="!isConnected">
+            <a routerLinkActive="active" routerLink="inscription">
+                Inscription
+            </a>
+        </li>
+        <li>
+            <a routerLinkActive="active" routerLink="compte">
+                Compte
+            </a>
+        </li>
+        <li *ngIf="isConnected">
+            <a (click)="deconnexion()">
+                Déconnexion
+            </a>
+        </li>
+    </ul>
+</nav>
