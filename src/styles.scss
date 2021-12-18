@@ -100,14 +100,12 @@ option {
     width: 100%;
     padding: 10px;
     border-radius: 4px;
-    // background-color: rgb(31, 29, 29);
     background-color: rgb(131, 131, 131);
     color : black;
 }
 input[type="text"]:focus, input[type="password"]:focus,input[type="date"]:focus, select:focus, option{
     background-color: rgb(77, 77, 77);
     color: white;
-    // cursor :pointer;
 
 }
 form > div > input {
